@@ -1,0 +1,14 @@
+%p#notice= notice
+= image_tag @image.photo.url(:medium)
+%p
+  %strong Name:
+  = @image.name
+%p
+  %strong Description:
+  = @image.description
+%p
+  %strong Visible:
+  = @image.visible
+= link_to 'Edit', edit_image_path(@image)
+|
+= link_to 'Back', images_path
