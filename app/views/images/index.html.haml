@@ -2,11 +2,11 @@
   - @images.each do |image|
     .photo
       = image_tag image.photo.url(:thumb)
-      .content
-        = image.name
-        = image.description
-        .icon
-          = link_to 'Show', image
-          = link_to 'Edit', edit_image_path(image)
-          = link_to 'Destroy', image, method: :delete, data: { confirm: 'Are you sure?' }
+      .icon
+        = link_to image do
+          %i.fa.fa-search>
+        = link_to edit_image_path(image) do
+          %i.fa.fa-pencil-square-o>
+        = link_to image, method: :delete, data:{confirm: "Delete this contact?"} do
+          %i.fa.fa-times
 
