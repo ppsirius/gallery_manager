@@ -1,14 +1,16 @@
-%p#notice= notice
-= image_tag @image.photo.url(:medium)
-%p
-  %strong Name:
-  = @image.name
-%p
-  %strong Description:
-  = @image.description
-%p
-  %strong Visible:
-  = @image.visible
-= link_to 'Edit', edit_image_path(@image)
-|
-= link_to 'Back', images_path
+.large-4.columns
+
+  = image_tag @image.photo.url(:thumb)
+  %p
+    %strong Name:
+    = @image.name
+  %p
+    %strong Description:
+    = @image.description
+  %p
+    %strong Visible:
+    = @image.visible
+  %p  
+    = link_to "Back", images_path, class: "button small alert"
+    = link_to "Edit", edit_image_path(@image), class: "button small success"
+
