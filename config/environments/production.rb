@@ -75,4 +75,23 @@ Rails.application.configure do
 
   # Do not dump schema after migrations.
   config.active_record.dump_schema_after_migration = false
+
+  config.paperclip_defaults = {
+    :storage => :s3,
+    :s3_protocol => 'http',
+    s3_signature_version: :v4,
+    :s3_credentials => {
+      :bucket => 'nowbruk2',
+      :access_key_id => 'AKIAJPC2FLXEWHVTZGVA',
+      :secret_access_key => '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'
+    }
+  }
+
+  Whatever::Application.config.middleware.use ExceptionNotification::Rack,
+    :email => {
+      :email_prefix => "[Whatever] ",
+      :sender_address => %{"notifier" <ppsirius@gmail.com>},
+      :exception_recipients => %w{ppsirius@gmail.com}
+    }
+
 end

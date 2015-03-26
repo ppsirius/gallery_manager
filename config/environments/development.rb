@@ -32,8 +32,16 @@ Rails.application.configure do
   # Raises helpful error messages.
   config.assets.raise_runtime_errors = true
 
-  Paperclip.options[:command_path] = "/usr/local/bin/"
-
+  config.paperclip_defaults = {
+    :storage => :s3,
+    :s3_protocol => 'http',
+    s3_signature_version: :v4,
+    :s3_credentials => {
+      :bucket => 'nowbruk2',
+      :access_key_id => 'AKIAJPC2FLXEWHVTZGVA',
+      :secret_access_key => '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'
+    }
+  }
 
   # Raises error for missing translations
   # config.action_view.raise_on_missing_translations = true
