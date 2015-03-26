@@ -87,11 +87,5 @@ Rails.application.configure do
     }
   }
 
-  Whatever::Application.config.middleware.use ExceptionNotification::Rack,
-    :email => {
-      :email_prefix => "[Whatever] ",
-      :sender_address => %{"notifier" <ppsirius@gmail.com>},
-      :exception_recipients => %w{ppsirius@gmail.com}
-    }
 
 end
