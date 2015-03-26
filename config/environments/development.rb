@@ -37,9 +37,9 @@ Rails.application.configure do
     :s3_protocol => 'http',
     s3_signature_version: :v4,
     :s3_credentials => {
-      :bucket => 'nowbruk2',
-      :access_key_id => 'AKIAJPC2FLXEWHVTZGVA',
-      :secret_access_key => '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'
+      :bucket => 'nowbruk-gallery',
+      :access_key_id   => ENV['S3_KEY'],
+      :secret_access_key => ENV['S3_SECRET']
     }
   }
 

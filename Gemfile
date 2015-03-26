@@ -33,7 +33,7 @@ gem 'sdoc', '~> 0.4.0',          group: :doc
 gem 'spring',        group: :development
 
 gem "paperclip"
-gem 'aws-sdk'
+gem 'aws-sdk', '< 2.0'
 
 gem 'foundation-rails'
 gem "font-awesome-rails"
