@@ -32,16 +32,16 @@ Rails.application.configure do
   # Raises helpful error messages.
   config.assets.raise_runtime_errors = true
 
-  config.paperclip_defaults = {
-    :storage => :s3,
-    :s3_protocol => 'http',
-    s3_signature_version: :v4,
-    :s3_credentials => {
-      :bucket => 'nowbruk-gallery',
-      :access_key_id   => ENV['S3_KEY'],
-      :secret_access_key => ENV['S3_SECRET']
-    }
-  }
+  # config.paperclip_defaults = {
+  #   :storage => :s3,
+  #   :s3_protocol => 'http',
+  #   s3_signature_version: :v4,
+  #   :s3_credentials => {
+  #     :bucket => 'nowbruk-gallery',
+  #     :access_key_id   => ENV['S3_KEY'],
+  #     :secret_access_key => ENV['S3_SECRET']
+  #   }
+  # }
 
   # Raises error for missing translations
   # config.action_view.raise_on_missing_translations = true
