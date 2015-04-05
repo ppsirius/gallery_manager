@@ -1,5 +1,5 @@
 == Gallery manager
-{Link}[http://http://stackoverflow.com/questions/2230954/is-there-any-way-to-easily-link-a-file-in-rdoc] to demo on heroku
+{Link}[https://polar-journey-8403.herokuapp.com/] to demo on heroku
 
 Easy app to upload photo and generate json with links.
 
