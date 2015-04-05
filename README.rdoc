@@ -1,28 +1,8 @@
-== README
+== Gallery manager
+{Link}[http://http://stackoverflow.com/questions/2230954/is-there-any-way-to-easily-link-a-file-in-rdoc] to demo on heroku
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+Easy app to upload photo and generate json with links.
 
-Things you may want to cover:
+Photos are upload to amazoon s3. We get the json file with url for thumbnails and normal size photo. 
+We can very fast connect this app with easy gallery on any website.
 
-* Ruby version
-
-* System dependencies
-
-* Configuration
-
-* Database creation
-
-* Database initialization
-
-* How to run the test suite
-
-* Services (job queues, cache servers, search engines, etc.)
-
-* Deployment instructions
-
-* ...
-
-
-Please feel free to use a different markup language if you do not plan to run
-<tt>rake doc:app</tt>.
